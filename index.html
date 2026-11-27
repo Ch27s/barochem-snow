@@ -718,7 +718,7 @@ footer a{color:#fff}
    [견적 요청서] FORM_ENDPOINT 로 보냅니다 (Formspree — 바로케미칼 전용 폼. 받는 메일은 Formspree 설정에서 바꿉니다).
      다른 메일로 받으려면 Formspree에서 새 폼을 만들어 주소를 바꾸세요. 비우면 요청서가 '이메일 쓰기'로 바뀝니다.
      SHEET_API 로도 같은 내용을 보냅니다 → 구글시트 '문의목록' 탭 맨 위에 한 줄이 생깁니다.
-     (받는 쪽: 그 시트의 Apps Script 웹 앱. 지금은 연결 끊음 — 비어 있음)
+     (받는 쪽: 바로케미칼 전용 테스트 시트의 Apps Script 웹 앱)
      웹 앱을 새로 배포해 주소가 바뀌면 SHEET_API 한 줄만 바꾸면 됩니다. 비우면 메일로만 받습니다.
 
    [사진·영상] PHOTO_A: 제품 사진 파일. LOOP_A: 제품 카드의 움직이는 영상(mp4) — 비우면 사진만 보임 (지금 '').
@@ -736,7 +736,7 @@ var SITE = {
   TEL_READY: false,
 
   FORM_ENDPOINT: 'https://formspree.io/f/xeagdwrv',
-  SHEET_API: '',   /* 구글시트 '문의목록' 탭으로 쌓이는 곳 (Apps Script 웹 앱 URL, …/exec). 비우면 메일로만 받음 */
+  SHEET_API: 'https://script.google.com/macros/s/AKfycbx0TsEMpLg329MvXaiRkH7erjzbqqnwumojJfTg5pAO-xK2VMAuiAnuzJUcD3VFVzMk/exec',   /* 구글시트 '문의목록' 탭으로 쌓이는 곳 (Apps Script 웹 앱 URL, …/exec). 비우면 메일로만 받음 */
 
   PHOTO_A: 'img/product-snowzero.jpg',
   LOOP_A: '',                            /* 영상 끔 — 사진만 (mp4 를 넣으면 같은 이름 .webm 도 함께 씀) */
