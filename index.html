@@ -715,7 +715,7 @@ footer a{color:#fff}
      → '대표전화 개통 준비 중'이 실제 번호 링크로 바뀌고, 휴대폰 하단 띠의 '이메일'이 '전화'로 바뀝니다.
      ※ 자리표시(02-000-0000)이거나 TEL_READY가 false면 전화 링크를 만들지 않습니다.
 
-   [견적 요청서] FORM_ENDPOINT 로 보냅니다 (Formspree — 〔바로케미칼 전용 폼 주소〕, 지금은 비어 있음).
+   [견적 요청서] FORM_ENDPOINT 로 보냅니다 (Formspree — 바로케미칼 전용 폼. 받는 메일은 Formspree 설정에서 바꿉니다).
      다른 메일로 받으려면 Formspree에서 새 폼을 만들어 주소를 바꾸세요. 비우면 요청서가 '이메일 쓰기'로 바뀝니다.
      SHEET_API 로도 같은 내용을 보냅니다 → 구글시트 '문의목록' 탭 맨 위에 한 줄이 생깁니다.
      (받는 쪽: 그 시트의 Apps Script 웹 앱. 지금은 연결 끊음 — 비어 있음)
@@ -735,7 +735,7 @@ var SITE = {
   TEL: '02-000-0000',
   TEL_READY: false,
 
-  FORM_ENDPOINT: '',
+  FORM_ENDPOINT: 'https://formspree.io/f/xeagdwrv',
   SHEET_API: '',   /* 구글시트 '문의목록' 탭으로 쌓이는 곳 (Apps Script 웹 앱 URL, …/exec). 비우면 메일로만 받음 */
 
   PHOTO_A: 'img/product-snowzero.jpg',
